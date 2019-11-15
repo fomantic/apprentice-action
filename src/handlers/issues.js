@@ -43,7 +43,7 @@ function newIssue (context) {
   let hasRequiredSections = true
 
   issueTemplates.forEach(temp => {
-    if (issueBody.indexOf(temp.template.title) === -1) {
+    if (issueBody.indexOf(temp.template.title) > -1) {
       templateUsed = temp
 
       temp.template.requiredSections.forEach(section => {
