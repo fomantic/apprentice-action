@@ -1,6 +1,6 @@
 // self
-const { leaveComment } = require('./utils')
-const commentMessages = require('./comment_messages')
+const { leaveComment } = require('../utils')
+const commentMessages = require('../comment_messages')
 
 const issueTemplates = [
   {
@@ -41,6 +41,8 @@ function newIssue (context) {
   const issueBody = context.payload.issue.body
   let templateUsed
   let hasRequiredSections = true
+
+  console.log('leaveComment', leaveComment)
 
   issueTemplates.forEach(temp => {
     const titleRegex = new RegExp(`/${temp.title}/`, 'g')
