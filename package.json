@@ -1,0 +1,34 @@
+{
+  "name": "@fomantic/apprentice-action",
+  "version": "1.0.0",
+  "description": "Helps manage issues and pull requests",
+  "keywords": [
+    "fomantic-ui",
+    "fomantic",
+    "action"
+  ],
+  "homepage": "https://fomantic-ui.com",
+  "bugs": {
+    "url": "https://github.com:fomantic/apprentice-action/issues"
+  },
+  "license": "MIT",
+  "author": "Sean Hamilton <sean@hamistudios.com>",
+  "main": "src/index.js",
+  "repository": "git@github.com:fomantic/apprentice-action.git",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "private": true
+}

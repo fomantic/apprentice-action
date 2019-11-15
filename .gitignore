@@ -1,0 +1,16 @@
+# project
+node_modules
+
+# logs & cache files
+*.log*
+.eslintcache
+
+# os & editors
+.DS_Store
+Thumbs.db
+.cache
+.settings
+.project
+*.sublime-project
+.idea
+.vscode

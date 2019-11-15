@@ -1,0 +1,5 @@
+name: 'Fomantic Apprentice'
+description: 'Helps manage issues and pull requests'
+runs:
+  using: 'node12'
+  main: 'src/index.js'
