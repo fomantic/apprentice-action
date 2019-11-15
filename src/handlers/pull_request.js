@@ -1,5 +1,5 @@
 // self
-const { leaveComment } = require('../helpers')
+const { leaveComment } = require('../utils')
 const commentMessages = require('../comment_messages')
 
 function newPullRequest (context) {

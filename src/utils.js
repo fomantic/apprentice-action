@@ -16,16 +16,6 @@ function noActionHandler () {
   console.log('There is no handler for this event action.')
 }
 
-function execHandler (context) {
-  const handler = handlers[context.eventName]
-  if (handler === undefined) return noEventHandler()
-
-  const func = handler[context.payload.action]
-  if (func === undefined) return noActionHandler()
-
-  func(context)
-}
-
 function leaveComment (context, message) {
   ghClient.issues.createComment({
     ...context.repo,
@@ -35,6 +25,7 @@ function leaveComment (context, message) {
 }
 
 module.exports = {
-  execHandler: execHandler,
-  leaveComment: leaveComment
+  noEventHandler,
+  noActionHandler,
+  leaveComment
 }

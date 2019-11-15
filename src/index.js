@@ -2,10 +2,14 @@
 const github = require('@actions/github')
 
 // self
-const { execHandler } = require('./helpers')
+const { noEventHandler, noActionHandler } = require('./utils')
+const handlers = require('./handlers')
 
 const context = github.context
 
-console.log('context', JSON.stringify(context))
+const handler = handlers[context.eventName]
+if (handler === undefined) noEventHandler()
 
-execHandler(context)
+const func = handler[context.payload.action]
+if (func === undefined) noActionHandler()
+else func(context)
