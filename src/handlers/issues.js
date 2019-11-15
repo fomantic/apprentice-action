@@ -1,5 +1,5 @@
 // self
-const { leaveComment } = require('../utils')
+const utils = require('../utils')
 const commentMessages = require('../comment_messages')
 
 const issueTemplates = [
@@ -56,16 +56,16 @@ function newIssue (context) {
   })
 
   if (templateUsed === undefined) {
-    leaveComment(context, commentMessages.noTemplateUsed(context))
+    utils.leaveComment(context, commentMessages.noTemplateUsed(context))
 
     if (!hasRequiredSections) {
-      leaveComment(context, commentMessages.missingTemplateSections(context, templateUsed.type, templateUsed.name))
+      utils.leaveComment(context, commentMessages.missingTemplateSections(context, templateUsed.type, templateUsed.name))
     }
   }
 
   if (context.payload.issue.author_association === 'FIRST_TIME_CONTRIBUTOR' ||
       context.payload.issue.author_association === 'FIRST_TIMER') {
-    leaveComment(context, commentMessages.newMember(context))
+    utils.leaveComment(context, commentMessages.newMember(context))
   }
 }
 
