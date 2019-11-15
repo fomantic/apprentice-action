@@ -167,7 +167,7 @@ module.exports = {
   </details>
   `,
   jsfiddle: (context) => {
-    const commentBody = context.comment.body
+    const commentBody = context.payload.comment.body
     const forUserRegex = new RegExp(/@(.*?)+/)
     const forUser = forUserRegex.exec(commentBody)
     let message = ''
