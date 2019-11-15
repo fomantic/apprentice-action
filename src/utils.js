@@ -35,6 +35,6 @@ function leaveComment (context, message) {
 }
 
 module.exports = {
-  execHandler,
-  leaveComment
+  execHandler: execHandler,
+  leaveComment: leaveComment
 }
