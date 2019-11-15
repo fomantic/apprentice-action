@@ -175,19 +175,19 @@ module.exports = {
     if (forUser.length > 1) message = `Hi ${forUser[0]} :wave:\n\n`
 
     message += `
-    @${context.payload.comment.user.login} has asked you to create a [JSFiddle](https://jsfiddle.net/31d6y7mn).
-    
-    We ask users to create a [JSFiddle](https://jsfiddle.net/31d6y7mn) because helps us understand your issue in a reproducible environment so we can provide the best support. 
-    
-    <details>
-    <summary>How to use</summary>
-    <ul>
-      <li>Open <a href="https://jsfiddle.net/31d6y7mn">JSFiddle</a></li>
-      <li>Click <code>Fork</code> at the top</li>
-      <li>Add your HTML, CSS and JavaScript and reproduce your issue</li>
-      <li>Click <code>Save</code> at the top</li>
-      <li>Copy your URL and post it as a comment :tada:</li>
-    </details>
+@${context.payload.comment.user.login} has asked you to create a [JSFiddle](https://jsfiddle.net/31d6y7mn).
+
+We ask users to create a [JSFiddle](https://jsfiddle.net/31d6y7mn) because helps us understand your issue in a reproducible environment so we can provide the best support. 
+
+<details>
+<summary>How to use</summary>
+<ul>
+  <li>Open <a href="https://jsfiddle.net/31d6y7mn">JSFiddle</a></li>
+  <li>Click <code>Fork</code> at the top</li>
+  <li>Add your HTML, CSS and JavaScript and reproduce your issue</li>
+  <li>Click <code>Save</code> at the top</li>
+  <li>Copy your URL and post it as a comment :tada:</li>
+</details>
     `
 
     return message
