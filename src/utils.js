@@ -18,10 +18,10 @@ function noActionHandler () {
 
 function execHandler (context) {
   const handler = handlers[context.eventName]
-  if (handler === undefined) noEventHandler()
+  if (handler === undefined) return noEventHandler()
 
   const func = handler[context.payload.action]
-  if (func === undefined) noActionHandler()
+  if (func === undefined) return noActionHandler()
 
   func(context)
 }
