@@ -2,7 +2,7 @@
 const github = require('@actions/github')
 
 // self
-const { execHandler } = require('./utils')
+const { execHandler } = require('./helpers')
 
 const context = github.context
 
