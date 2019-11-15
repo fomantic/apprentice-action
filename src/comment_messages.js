@@ -172,7 +172,7 @@ module.exports = {
     const forUser = forUserRegex.exec(commentBody)
     let message = ''
 
-    if (forUser.length > 1) message = `Hi ${forUser[0]} :wave:\n\n`
+    if (forUser !== null && forUser.length > 1) message = `Hi ${forUser[0]} :wave:\n\n`
 
     message += `
 @${context.payload.comment.user.login} has asked you to create a [JSFiddle](https://jsfiddle.net/31d6y7mn).
