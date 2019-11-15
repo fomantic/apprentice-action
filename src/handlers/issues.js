@@ -1,6 +1,6 @@
 // self
-const { leaveComment } = require('../utils')
-const commentMessages = require('../comment_messages')
+const { leaveComment } = require('./utils')
+const commentMessages = require('./comment_messages')
 
 const issueTemplates = [
   {
