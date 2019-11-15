@@ -2,6 +2,8 @@
 const utils = require('../utils')
 const commentMessages = require('../comment_messages')
 
+console.log('utils', utils)
+
 const issueTemplates = [
   {
     type: 'bug',
