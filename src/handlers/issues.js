@@ -44,7 +44,7 @@ function newIssue (context) {
 
   issueTemplates.forEach(temp => {
     if (issueBody.indexOf(temp.template.title) > -1) {
-      console.log(`Issue is using ${temp.template.name} template`)
+      console.log(`Issue is using ${temp.name} template`)
       templateUsed = temp
 
       temp.template.requiredSections.forEach(section => {
