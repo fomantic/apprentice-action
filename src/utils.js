@@ -2,9 +2,6 @@
 const github = require('@actions/github')
 const core = require('@actions/core')
 
-// self
-const handlers = require('./handlers')
-
 const githubToken = core.getInput('GITHUB_SECRET', { required: true })
 const ghClient = new github.GitHub(githubToken)
 

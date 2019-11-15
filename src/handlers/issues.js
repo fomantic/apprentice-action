@@ -42,8 +42,6 @@ function newIssue (context) {
   let templateUsed
   let hasRequiredSections = true
 
-  console.log('leaveComment', leaveComment)
-
   issueTemplates.forEach(temp => {
     const titleRegex = new RegExp(`/${temp.title}/`, 'g')
 
