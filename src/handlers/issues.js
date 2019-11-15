@@ -45,6 +45,10 @@ function newIssue (context) {
   issueTemplates.forEach(temp => {
     const titleRegex = new RegExp(`/${temp.title}/`, 'g')
 
+    console.log('titleRegex', titleRegex)
+    console.log('body', issueBody)
+    console.log('result', titleRegex.test(issueBody))
+
     if (titleRegex.test(issueBody)) {
       templateUsed = temp
 
