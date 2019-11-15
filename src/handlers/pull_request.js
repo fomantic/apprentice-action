@@ -5,8 +5,7 @@ const commentMessages = require('../comment_messages')
 function newPullRequest (context) {
   const prBody = context.pull_request.body
 
-  const descRegExp = new RegExp(/## Description/, 'g')
-  if (!descRegExp.test(prBody)) {
+  if (prBody.indexOf('## Description') === -1) {
     leaveComment(context, commentMessages.noPrDescription(context))
   }
 

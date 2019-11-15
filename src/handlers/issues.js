@@ -43,14 +43,11 @@ function newIssue (context) {
   let hasRequiredSections = true
 
   issueTemplates.forEach(temp => {
-    const titleRegex = new RegExp(`${temp.template.title}`, 'g')
-
-    if (titleRegex.test(issueBody)) {
+    if (issueBody.indexOf(temp.template.title) === -1) {
       templateUsed = temp
 
       temp.template.requiredSections.forEach(section => {
-        const sectionRegexp = new RegExp(`${section}`, 'g')
-        if (!sectionRegexp.test(issueBody)) hasRequiredSections = false
+        if (issueBody.indexOf(section) === -1) hasRequiredSections = false
       })
     }
   })
