@@ -4,7 +4,7 @@ Helps manage issues and pull requests!
 
 ## Inputs
 
-### `GITHUB_TOKEN`
+### `GITHUB_SECRET`
 
 **Required** A GitHub secret token with access to the repository. This should be stored in a secret.
 
@@ -13,5 +13,5 @@ Helps manage issues and pull requests!
 ```yaml
 uses: fomantic/apprentice-action@master
 with:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_SECRET: ${{ secrets.GITHUB_SECRET }}
 ```
