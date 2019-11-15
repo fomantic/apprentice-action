@@ -1,8 +1,11 @@
 // npm
-// const core = require('@actions/core')
 const github = require('@actions/github')
 
 // self
-// const issue = require('./issue')
+const { execHandler } = require('./utils')
 
-console.log(JSON.stringify(github.context))
+const context = github.context
+
+console.log('context', JSON.stringify(context))
+
+execHandler(context)
