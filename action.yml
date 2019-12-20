@@ -1,5 +1,5 @@
-name: 'Fomantic Apprentice'
-description: 'Helps manage issues and pull requests'
+name: Fomantic Apprentice
+description: Helps manage issues and pull requests for Fomantic staff
 runs:
-  using: 'node12'
-  main: 'src/index.js'
+  using: docker
+  image: Dockerfile

@@ -1,6 +1,6 @@
 # Fomantic Apprentice Action
 
-Helps manage issues and pull requests!
+Helps manage issues and pull requests for Fomantic staff
 
 ## Inputs
 

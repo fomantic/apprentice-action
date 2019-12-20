@@ -1,0 +1,61 @@
+Hi @{{ username }} :wave:
+
+It looks like you have used the {{ templateName }} issue template however you have missed some required sections.
+
+<details>
+  <summary>Please edit your comment and add any missing sections</summary>
+  {% if templateType == 'bug' %}
+    ```markdown
+    # Bug Report
+
+    <!--
+    Title Format
+    [Scope] Summary of what is broken
+    -->
+
+    ## Steps to reproduce
+    1.
+    2.
+    3.
+
+    ## Expected result <!-- Required -->
+
+    ## Actual result <!-- Required -->
+
+    ## Testcase
+    <!-- Fork https://jsfiddle.net/31d6y7mn -->
+
+    ## Screenshot (when possible)
+    ![]()
+
+    ## Version
+    x.x.x
+    ```
+  {% endif %}
+
+  {% if templateType == 'feature' %}
+    ```markdown
+    # Feature Request
+
+    ## Description <!-- Required -->
+    Explain what you want in great detail
+
+    ## Example <!-- Required -->
+
+    ## Testcase (when possible)
+    <!-- Fork https://jsfiddle.net/31d6y7mn -->
+
+    ## Screenshot (when possible)
+    ![]()
+    ```
+  {% endif %}
+
+  {% if templateType == 'help' %}
+    ```markdown
+    # Help Wanted
+
+    ## Problem <!-- Required -->
+    Describe your problem in great detail
+    ```
+  {% endif %}
+</details>
