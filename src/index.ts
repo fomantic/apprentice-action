@@ -1,12 +1,12 @@
 // npm
 import { Toolkit } from 'actions-toolkit'
 
-Toolkit.run(async tools => {
+// self
+import events from './events'
 
-}, {
-  event: [
-    'pull_request', 'issues',
-    'issue_comment', 'pull_request_review'
-  ]
-})
+const event = [
+  'issues', 'issue_comment',
+  'pull_request', 'pull_request_review'
+]
 
+Toolkit.run(events, { event })
