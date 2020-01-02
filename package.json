@@ -6,6 +6,7 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@octokit/types": "^2.0.2",
     "@types/marked": "^0.7.2",
     "actions-toolkit": "^2.2.0",
     "liquidjs": "^9.6.0",
