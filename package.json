@@ -10,7 +10,7 @@
     "@types/marked": "^0.7.2",
     "actions-toolkit": "^2.2.0",
     "liquidjs": "^9.6.0",
-    "marked": "^0.8.0"
+    "marked": "^4.0.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.12.0",
