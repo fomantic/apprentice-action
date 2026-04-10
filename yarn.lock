@@ -336,6 +336,11 @@ color-name@1.1.3:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
+commander@^10.0.0:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06"
+  integrity sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -978,10 +983,12 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-liquidjs@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.0.0.tgz#282579e9f90f4bfd92ef7d09ad4f5aac3ec9fd61"
-  integrity sha512-uY3fKqBSRmnat0wB5qWk0W5N5iT78OUhuIXNRiMfhYQ3p35al9mEWKQ68/Z+WD54V2upaxEM8nHaZ6o1B8WCMA==
+liquidjs@^10.25.5:
+  version "10.25.5"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.25.5.tgz#09c1ee6d6c00a5464e3b9a5bb3889b14f04fcc05"
+  integrity sha512-GKiKeZjJDdVoQAu+S9rzkYsYnYhcep5W3WwZXgb5f+yq484P/k9JqamBbGYu+LBEixcUAXZr2jogdAIjB3ki1w==
+  dependencies:
+    commander "^10.0.0"
 
 load-json-file@^2.0.0:
   version "2.0.0"
